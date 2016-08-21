@@ -1,34 +1,40 @@
-# Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
-url: "http://www.jacoporabolini.com/emerald"
-author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Build settings
-baseurl: /emerald/ # Change this to your relative path (ex: /blog/), or leave just a /
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
 markdown: kramdown
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
+disqus: dbyll
+google_analytics: dbyll
+title: dbyll
 
-# Default values
 defaults:
   -
     scope:
-      path: ""
-      type: "posts"
+      path: "" # empty string for all files
     values:
-      layout: "post"
+      title: dbyll
 
-# Custom variables
-version: "1.1.0"
+description: Stylish Jekyll Theme
+author:
+  name: dbyll
+  email: dbyll@ismaildemirbilek.com
+  github: dbtek
+  twitter: dbtek
+  pinterest: asd123
+  linkedin: asd123
+  bio: Your stylish, minimalist theme!
+  email_md5: 726351295ec82e145928582f595aa3aa
 
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+gems:
+  - jekyll-paginate
